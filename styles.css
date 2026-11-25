@@ -1,0 +1,107 @@
+:root {
+  color-scheme: dark;
+  --page: #141414;
+  --card: #1f1f1f;
+  --link: #333;
+  --accent: #c4f82a;
+  --text: #fff;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-VariableFont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  padding: 1.5rem;
+  place-items: center;
+  background-color: var(--page);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.profile {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 24rem;
+  min-width: 0;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: var(--card);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.profile__avatar {
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
+  justify-self: center;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile__location {
+  margin-top: 0.25rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.social-links {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--link);
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible,
+.social-links a:active {
+  background-color: var(--accent);
+  color: var(--page);
+}
+
+.social-links a:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+@media (min-width: 30rem) {
+  .profile {
+    padding: 2.5rem;
+  }
+}

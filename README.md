@@ -1,2 +1,17 @@
-# social-links-profile
-Social links profile — a responsive HTML and CSS solution to the Frontend Mentor challenge.
+# Social links profile
+
+Адаптивна картка профілю Jessica Randall за макетом [Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
+
+## Запуск
+
+Відкрийте `index.html` у браузері. Фото та шрифт Inter завантажуються з папки `assets`.
+
+## Як працює сторінка
+
+Вміст і адреси п’яти посилань задано в `index.html`, а кольори, розміри та відступи — у `styles.css`. Картка зберігає поля на вузькому екрані й має максимальну ширину 384 пікселі.
+
+Наведіть вказівник на посилання, щоб побачити зелене тло. Клавіша Tab переміщує фокус униз за списком, Shift + Tab повертає його назад, а Enter відкриває вибране посилання. Під час навігації з клавіатури навколо посилання також з’являється біла рамка.
+
+У демонстраційному профілі посилання ведуть на головні сторінки відповідних платформ. Щоб використати картку для себе, змініть адреси в атрибутах `href`.
+
+Шрифт Inter поширюється за [ліцензією SIL Open Font License](./assets/fonts/OFL.txt).
